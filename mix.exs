@@ -33,7 +33,7 @@ defmodule Honeydew.Mixfile do
   # Type `mix help compile.app` for more information
   def application do
     [extra_applications: [:logger],
-     included_applications: [:mnesia],
+     # included_applications: [:mnesia], comment out to avoid conflict with memento.
      mod: {Honeydew.Application, []}]
   end
 
